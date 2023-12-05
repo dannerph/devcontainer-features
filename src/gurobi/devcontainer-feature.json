@@ -1,0 +1,21 @@
+{
+    "name": "Gurobi",
+    "id": "gurobi",
+    "version": "1.0.0",
+    "description": "Install Gurobi solver",
+    "documentationURL": "https://github.com/dannerph/gurobi-devcontainer-features/tree/main/src/gurobi",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "11.0.0",
+                "10.0.3"
+            ],
+            "default": "11.0.0",
+            "description": "Select a Gurobi version"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
