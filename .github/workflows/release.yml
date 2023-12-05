@@ -19,7 +19,7 @@ jobs:
           publish-features: "true"
           base-path-to-features: "./src"
           generate-docs: "true"
-          features-namespace: "dannerph/gurobi-devcontainer-features"
+          features-namespace: "dannerph/devcontainer-features"
 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
