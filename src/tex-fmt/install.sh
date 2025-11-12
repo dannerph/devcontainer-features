@@ -1,6 +1,5 @@
 #!/bin/bash
-
-VERSION=${VERSION:-"v0.5.6"}
+TEX_FMT_VERSION=${VERSION:-"v0.5.6"}
 
 USERNAME=${USERNAME:-${_REMOTE_USER:-"automatic"}}
 UPDATE_RC="${UPDATE_RC:-"true"}"
@@ -73,7 +72,7 @@ check_packages curl
 
 echo "Download and extract..."
 mkdir ${INSTALL_DIR}
-curl -L https://github.com/WGUNDERWOOD/tex-fmt/releases/download/${VERSION}/tex-fmt-x86_64-linux.tar.gz | tar xz -C ${INSTALL_DIR} 
+curl -L https://github.com/WGUNDERWOOD/tex-fmt/releases/download/${TEX_FMT_VERSION}/tex-fmt-x86_64-linux.tar.gz | tar xz -C ${INSTALL_DIR} 
 
 chown -R "${USERNAME}" "${INSTALL_DIR}"
 chmod -R g+r+w "${INSTALL_DIR}"
