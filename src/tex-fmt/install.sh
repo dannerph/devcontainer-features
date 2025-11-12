@@ -80,6 +80,6 @@ chmod -R g+r+w "${INSTALL_DIR}"
 # Clean up
 cleanup_apt
 
-updaterc "export PATH=\${INSTALL_DIR}:\${PATH}"
+updaterc "export PATH=${INSTALL_DIR}:\${PATH}"
 
 echo "Done!"
