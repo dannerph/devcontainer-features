@@ -1,0 +1,20 @@
+{
+    "name": "tex-fmt",
+    "id": "tex-fmt",
+    "version": "1.0.0",
+    "description": "Install rust-based Tex-fmt LaTex formatter",
+    "documentationURL": "https://github.com/dannerph/devcontainer-features/tree/main/src/tex-fmt",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "v0.5.6"
+            ],
+            "default": "v0.5.6",
+            "description": "Select a tex-fmt version"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
